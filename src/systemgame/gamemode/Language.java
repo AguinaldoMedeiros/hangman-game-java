@@ -1,6 +1,6 @@
 package systemgame.gamemode;
 
-public enum Lenguage {
+public enum Language {
     ENGLISH,
     SPANISH,
     FRENCH,

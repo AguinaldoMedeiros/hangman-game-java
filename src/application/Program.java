@@ -1,7 +1,8 @@
 package application;
 
+import systemgame.WordGenerator;
 import systemgame.gamemode.GameMode;
-import systemgame.gamemode.Lenguage;
+import systemgame.gamemode.Language;
 import systemgame.gamemode.PlayerMode;
 import systemgame.gamemode.WordCategory;
 
@@ -12,16 +13,17 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
         GameMode gameMode = new GameMode();
+        WordGenerator wordGenerator = new WordGenerator();
 
         System.out.println("Select your game mode preference: ");
         System.out.println("Lenguages: ");
         System.out.println();
-        for (Lenguage lenguage : Lenguage.values()) {
+        for (Language lenguage : Language.values()) {
             System.out.println(lenguage);
         }
         System.out.println();
         System.out.print("Enter to lenguage: ");
-        Lenguage lenguage = Lenguage.valueOf(sc.next());
+        Language lenguage = Language.valueOf(sc.next());
         System.out.println();
 
         System.out.println("Modes: ");
@@ -47,6 +49,8 @@ public class Program {
         gameMode.setGameMode(lenguage, playerMode, wordCategory);
 
         System.out.println(gameMode.getSelectedGameMode());
+
+        System.out.println(wordGenerator.getRandomWord(gameMode));
 
 
     }
