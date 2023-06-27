@@ -1,6 +1,5 @@
 package systemgame;
 
-import systemgame.gamemode.GameMode;
 import systemgame.gamemode.Language;
 import systemgame.gamemode.WordCategory;
 
@@ -9,11 +8,12 @@ import java.util.Map;
 import java.util.Random;
 
 public class WordGenerator {
-    private Random random;
+    private Random random = new Random();
+    private String randomWord = "";
 
     private Map<WordCategory, Map<Language, String[]>> words;
 
-    public WordGenerator(){
+    public WordGenerator() {
         words = new HashMap<>();
 
         Map<Language, String[]> allWords = new HashMap<>();
@@ -33,7 +33,6 @@ public class WordGenerator {
         animalsWords.put(Language.ITALIAN, new String[]{"gatto", "cane", "leone", "elefante", "tigre"});
         animalsWords.put(Language.PORTUGUESE, new String[]{"gato", "cachorro", "leão", "elefante", "tigre"});
         words.put(WordCategory.ANIMALS, animalsWords);
-
 
         Map<Language, String[]> countriesWords = new HashMap<>();
         countriesWords.put(Language.ENGLISH, new String[]{"Brazil", "United States", "Canada", "France", "Japan"});
@@ -117,13 +116,17 @@ public class WordGenerator {
         instrumentsWords.put(Language.PORTUGUESE, new String[]{"guitarra", "piano", "violino", "bateria", "trompete"});
         words.put(WordCategory.MUSICAL_INSTRUMENTS, instrumentsWords);
 
-        random = new Random();
+
     }
 
-    public String getRandomWord(GameMode gameMode) {
-        Map<Language, String[]> wordCategory = words.get(gameMode.getWordCategory());
-        String[] wordsByLanguage = wordCategory.get(gameMode.getLanguage());
+    public String getRandomWord() {
+        return randomWord;
+    }
+
+    public void generateRandomWord(Language language, WordCategory category) {
+        Map<Language, String[]> wordCategory = words.get(category);
+        String[] wordsByLanguage = wordCategory.get(language);
         int randomIndex = random.nextInt(wordsByLanguage.length);
-        return wordsByLanguage[randomIndex];
+        randomWord = wordsByLanguage[randomIndex];
     }
 }
