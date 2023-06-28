@@ -23,7 +23,6 @@ public class UI {
 
         System.out.println();
         System.out.println(gameMode.getSelectedGameMode());
-        System.out.println(wordGenerator.getRandomWord());
         System.out.println();
         System.out.println(player.getPlayerStats());
     }
