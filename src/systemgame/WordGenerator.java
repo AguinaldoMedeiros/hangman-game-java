@@ -17,106 +17,104 @@ public class WordGenerator {
         words = new HashMap<>();
 
         Map<Language, String[]> allWords = new HashMap<>();
-        allWords.put(Language.ENGLISH, new String[]{"cat", "dog", "tree", "house", "car"});
-        allWords.put(Language.SPANISH, new String[]{"gato", "perro", "árbol", "casa", "coche"});
-        allWords.put(Language.FRENCH, new String[]{"chat", "chien", "arbre", "maison", "voiture"});
-        allWords.put(Language.GERMAN, new String[]{"Katze", "Hund", "Baum", "Haus", "Auto"});
-        allWords.put(Language.ITALIAN, new String[]{"gatto", "cane", "albero", "casa", "auto"});
-        allWords.put(Language.PORTUGUESE, new String[]{"gato", "cachorro", "árvore", "casa", "carro"});
+        allWords.put(Language.ENGLISH, new String[]{"CAT", "DOG", "TREE", "HOUSE", "CAR"});
+        allWords.put(Language.SPANISH, new String[]{"GATO", "PERRO", "ARBOL", "CASA", "COCHE"});
+        allWords.put(Language.FRENCH, new String[]{"CHAT", "CHIEN", "ARBRE", "MAISON", "VOITURE"});
+        allWords.put(Language.GERMAN, new String[]{"KATZE", "HUND", "BAUM", "HAUS", "AUTO"});
+        allWords.put(Language.ITALIAN, new String[]{"GATTO", "CANE", "ALBERO", "CASA", "AUTO"});
+        allWords.put(Language.PORTUGUESE, new String[]{"GATO", "CACHORRO", "ARVORE", "CASA", "CARRO"});
         words.put(WordCategory.ALL, allWords);
 
         Map<Language, String[]> animalsWords = new HashMap<>();
-        animalsWords.put(Language.ENGLISH, new String[]{"cat", "dog", "lion", "elephant", "tiger"});
-        animalsWords.put(Language.SPANISH, new String[]{"gato", "perro", "león", "elefante", "tigre"});
-        animalsWords.put(Language.FRENCH, new String[]{"chat", "chien", "lion", "éléphant", "tigre"});
-        animalsWords.put(Language.GERMAN, new String[]{"Katze", "Hund", "Löwe", "Elefant", "Tiger"});
-        animalsWords.put(Language.ITALIAN, new String[]{"gatto", "cane", "leone", "elefante", "tigre"});
-        animalsWords.put(Language.PORTUGUESE, new String[]{"gato", "cachorro", "leão", "elefante", "tigre"});
+        animalsWords.put(Language.ENGLISH, new String[]{"CAT", "DOG", "LION", "ELEPHANT", "TIGER"});
+        animalsWords.put(Language.SPANISH, new String[]{"GATO", "PERRO", "LEON", "ELEFANTE", "TIGRE"});
+        animalsWords.put(Language.FRENCH, new String[]{"CHAT", "CHIEN", "LION", "ELEPHANT", "TIGRE"});
+        animalsWords.put(Language.GERMAN, new String[]{"KATZE", "HUND", "LOWE", "ELEFANT", "TIGER"});
+        animalsWords.put(Language.ITALIAN, new String[]{"GATTO", "CANE", "LEONE", "ELEFANTE", "TIGRE"});
+        animalsWords.put(Language.PORTUGUESE, new String[]{"GATO", "CACHORRO", "LEAO", "ELEFANTE", "TIGRE"});
         words.put(WordCategory.ANIMALS, animalsWords);
 
         Map<Language, String[]> countriesWords = new HashMap<>();
-        countriesWords.put(Language.ENGLISH, new String[]{"Brazil", "United States", "Canada", "France", "Japan"});
-        countriesWords.put(Language.SPANISH, new String[]{"Brasil", "Estados Unidos", "Canadá", "Francia", "Japón"});
-        countriesWords.put(Language.FRENCH, new String[]{"Brésil", "États-Unis", "Canada", "France", "Japon"});
-        countriesWords.put(Language.GERMAN, new String[]{"Brasilien", "Vereinigte Staaten", "Kanada", "Frankreich", "Japan"});
-        countriesWords.put(Language.ITALIAN, new String[]{"Brasile", "Stati Uniti", "Canada", "Francia", "Giappone"});
-        countriesWords.put(Language.PORTUGUESE, new String[]{"Brasil", "Estados Unidos", "Canadá", "França", "Japão"});
+        countriesWords.put(Language.ENGLISH, new String[]{"BRAZIL", "UNITED STATES", "CANADA", "FRANCE", "JAPAN"});
+        countriesWords.put(Language.SPANISH, new String[]{"BRASIL", "ESTADOS UNIDOS", "CANADA", "FRANCIA", "JAPON"});
+        countriesWords.put(Language.FRENCH, new String[]{"BRESIL", "ETATS UNIS", "CANADA", "FRANCE", "JAPON"});
+        countriesWords.put(Language.GERMAN, new String[]{"BRASILIEN", "VEREINIGTE STAATEN", "KANADA", "FRANKREICH", "JAPAN"});
+        countriesWords.put(Language.ITALIAN, new String[]{"BRASILE", "STATI UNITI", "CANADA", "FRANCIA", "GIAPPONE"});
+        countriesWords.put(Language.PORTUGUESE, new String[]{"BRASIL", "ESTADOS UNIDOS", "CANADA", "FRANCA", "JAPAO"});
         words.put(WordCategory.COUNTRIES, countriesWords);
 
 
         Map<Language, String[]> fruitsWords = new HashMap<>();
-        fruitsWords.put(Language.ENGLISH, new String[]{"apple", "banana", "orange", "strawberry", "pineapple"});
-        fruitsWords.put(Language.SPANISH, new String[]{"manzana", "plátano", "naranja", "fresa", "piña"});
-        fruitsWords.put(Language.FRENCH, new String[]{"pomme", "banane", "orange", "fraise", "ananas"});
-        fruitsWords.put(Language.GERMAN, new String[]{"Apfel", "Banane", "Orange", "Erdbeere", "Ananas"});
-        fruitsWords.put(Language.ITALIAN, new String[]{"mela", "banana", "arancia", "fragola", "ananas"});
-        fruitsWords.put(Language.PORTUGUESE, new String[]{"maçã", "banana", "laranja", "morango", "abacaxi"});
+        fruitsWords.put(Language.ENGLISH, new String[]{"APPLE", "BANANA", "ORANGE", "STRAWBERRY", "PINEAPPLE"});
+        fruitsWords.put(Language.SPANISH, new String[]{"MANZANA", "PLATANO", "NARANJA", "FRESA", "PINA"});
+        fruitsWords.put(Language.FRENCH, new String[]{"POMME", "BANANE", "ORANGE", "FRAISE", "ANANAS"});
+        fruitsWords.put(Language.GERMAN, new String[]{"APFEL", "BANANE", "ORANGE", "ERDBEERE", "ANANAS"});
+        fruitsWords.put(Language.ITALIAN, new String[]{"MELA", "BANANA", "ARANCIA", "FRAGOLA", "ANANAS"});
+        fruitsWords.put(Language.PORTUGUESE, new String[]{"MACA", "BANANA", "LARANJA", "MORANGO", "ABACAXI"});
         words.put(WordCategory.FRUITS, fruitsWords);
 
         Map<Language, String[]> occupationsWords = new HashMap<>();
-        occupationsWords.put(Language.ENGLISH, new String[]{"doctor", "teacher", "engineer", "lawyer", "chef"});
-        occupationsWords.put(Language.SPANISH, new String[]{"médico", "maestro", "ingeniero", "abogado", "chef"});
-        occupationsWords.put(Language.FRENCH, new String[]{"médecin", "enseignant", "ingénieur", "avocat", "chef"});
-        occupationsWords.put(Language.GERMAN, new String[]{"Arzt", "Lehrer", "Ingenieur", "Anwalt", "Koch"});
-        occupationsWords.put(Language.ITALIAN, new String[]{"medico", "insegnante", "ingegnere", "avvocato", "chef"});
-        occupationsWords.put(Language.PORTUGUESE, new String[]{"médico", "professor", "engenheiro", "advogado", "chef"});
+        occupationsWords.put(Language.ENGLISH, new String[]{"DOCTOR", "TEACHER", "ENGINEER", "LAWYER", "CHEF"});
+        occupationsWords.put(Language.SPANISH, new String[]{"MEDICO", "MAESTRO", "INGENIERO", "ABOGADO", "CHEF"});
+        occupationsWords.put(Language.FRENCH, new String[]{"MEDECIN", "ENSEIGNANT", "INGENIEUR", "AVOCAT", "CHEF"});
+        occupationsWords.put(Language.GERMAN, new String[]{"ARZT", "LEHRER", "INGENIEUR", "ANWALT", "KOCH"});
+        occupationsWords.put(Language.ITALIAN, new String[]{"MEDICO", "INSEGNANTE", "INGEGNERE", "AVVOCATO", "CHEF"});
+        occupationsWords.put(Language.PORTUGUESE, new String[]{"MÉDICO", "PROFESSOR", "ENGENHEIRO", "ADVOGADO", "CHEF"});
         words.put(WordCategory.OCCUPATIONS, occupationsWords);
 
         Map<Language, String[]> sportsWords = new HashMap<>();
-        sportsWords.put(Language.ENGLISH, new String[]{"soccer", "basketball", "tennis", "swimming", "volleyball"});
-        sportsWords.put(Language.SPANISH, new String[]{"fútbol", "baloncesto", "tenis", "natación", "voleibol"});
-        sportsWords.put(Language.FRENCH, new String[]{"football", "basketball", "tennis", "natation", "volleyball"});
-        sportsWords.put(Language.GERMAN, new String[]{"Fußball", "Basketball", "Tennis", "Schwimmen", "Volleyball"});
-        sportsWords.put(Language.ITALIAN, new String[]{"calcio", "basket", "tennis", "nuoto", "pallavolo"});
-        sportsWords.put(Language.PORTUGUESE, new String[]{"futebol", "basquete", "tênis", "natação", "vôlei"});
+        sportsWords.put(Language.ENGLISH, new String[]{"SOCCER", "BASKETBALL", "TENNIS", "SWIMMING", "VOLLEYBALL"});
+        sportsWords.put(Language.SPANISH, new String[]{"FUTBOL", "BALONCESTO", "TENIS", "NATACION", "VOLEIBOL"});
+        sportsWords.put(Language.FRENCH, new String[]{"FOOTBALL", "BASKETBALL", "TENNIS", "NATATION", "VOLLEYBALL"});
+        sportsWords.put(Language.GERMAN, new String[]{"FUSSBALL", "BASKETBALL", "TENNIS", "SCHWIMMEN", "VOLLEYBALL"});
+        sportsWords.put(Language.ITALIAN, new String[]{"CALCIO", "BASKET", "TENNIS", "NUOTO", "PALLAVOLO"});
+        sportsWords.put(Language.PORTUGUESE, new String[]{"FUTEBOL", "BASQUETE", "TENIS", "NATACAO", "VOLEI"});
         words.put(WordCategory.SPORTS, sportsWords);
 
         Map<Language, String[]> moviesWords = new HashMap<>();
-        moviesWords.put(Language.ENGLISH, new String[]{"Avengers", "Titanic", "Jurassic Park", "Star Wars", "The Lion King"});
-        moviesWords.put(Language.SPANISH, new String[]{"Los Vengadores", "Titanic", "Parque Jurásico", "La Guerra de las Galaxias", "El Rey León"});
-        moviesWords.put(Language.FRENCH, new String[]{"Les Avengers", "Titanic", "Jurassic Park", "Star Wars", "Le Roi Lion"});
-        moviesWords.put(Language.GERMAN, new String[]{"Die Avengers", "Titanic", "Jurassic Park", "Star Wars", "Der König der Löwen"});
-        moviesWords.put(Language.ITALIAN, new String[]{"Gli Avengers", "Titanic", "Jurassic Park", "Star Wars", "Il Re Leone"});
-        moviesWords.put(Language.PORTUGUESE, new String[]{"Os Vingadores", "Titanic", "Parque Jurássico", "Star Wars", "O Rei Leão"});
+        moviesWords.put(Language.ENGLISH, new String[]{"AVENGERS", "TITANIC", "JURASSIC PARK", "STAR WARS", "THE LION KING"});
+        moviesWords.put(Language.SPANISH, new String[]{"LOS VENGADORES", "TITANIC", "PARQUE JURASICO", "LA GUERRA DE LAS GALAXIAS", "EL REY LEON"});
+        moviesWords.put(Language.FRENCH, new String[]{"LES AVENGERS", "TITANIC", "JURASSIC PARK", "STAR WARS", "LE ROI LION"});
+        moviesWords.put(Language.GERMAN, new String[]{"DIE AVENGERS", "TITANIC", "JURASSIC PARK", "STAR WARS", "DER KONIG DER LOWEN"});
+        moviesWords.put(Language.ITALIAN, new String[]{"GLI AVENGERS", "TITANIC", "JURASSIC PARK", "STAR WARS", "IL RE LEONE"});
+        moviesWords.put(Language.PORTUGUESE, new String[]{"OS VINGADORES", "TITANIC", "PARQUE JURASSICO", "STAR WARS", "O REI LEAO"});
         words.put(WordCategory.MOVIES, moviesWords);
 
         Map<Language, String[]> foodsWords = new HashMap<>();
-        foodsWords.put(Language.ENGLISH, new String[]{"pizza", "burger", "pasta", "sushi", "salad"});
-        foodsWords.put(Language.SPANISH, new String[]{"pizza", "hamburguesa", "pasta", "sushi", "ensalada"});
-        foodsWords.put(Language.FRENCH, new String[]{"pizza", "hamburger", "pâtes", "sushi", "salade"});
-        foodsWords.put(Language.GERMAN, new String[]{"Pizza", "Burger", "Nudeln", "Sushi", "Salat"});
-        foodsWords.put(Language.ITALIAN, new String[]{"pizza", "hamburger", "pasta", "sushi", "insalata"});
-        foodsWords.put(Language.PORTUGUESE, new String[]{"pizza", "hambúrguer", "macarrão", "sushi", "salada"});
+        foodsWords.put(Language.ENGLISH, new String[]{"PIZZA", "BURGER", "PASTA", "SUSHI", "SALAD"});
+        foodsWords.put(Language.SPANISH, new String[]{"PIZZA", "HAMBURGUESA", "PASTA", "SUSHI", "ENSALADA"});
+        foodsWords.put(Language.FRENCH, new String[]{"PIZZA", "HAMBURGER", "PATES", "SUSHI", "SALADE"});
+        foodsWords.put(Language.GERMAN, new String[]{"PIZZA", "BURGER", "NUDELN", "SUSHI", "SALAT"});
+        foodsWords.put(Language.ITALIAN, new String[]{"PIZZA", "HAMBURGER", "PASTA", "SUSHI", "INSALATA"});
+        foodsWords.put(Language.PORTUGUESE, new String[]{"PIZZA", "HAMBURGUER", "MACARRAO", "SUSHI", "SALADA"});
         words.put(WordCategory.FOODS, foodsWords);
 
         Map<Language, String[]> transportationWords = new HashMap<>();
-        transportationWords.put(Language.ENGLISH, new String[]{"car", "bus", "train", "bike", "plane"});
-        transportationWords.put(Language.SPANISH, new String[]{"coche", "autobús", "tren", "bicicleta", "avión"});
-        transportationWords.put(Language.FRENCH, new String[]{"voiture", "bus", "train", "vélo", "avion"});
-        transportationWords.put(Language.GERMAN, new String[]{"Auto", "Bus", "Zug", "Fahrrad", "Flugzeug"});
-        transportationWords.put(Language.ITALIAN, new String[]{"auto", "bus", "treno", "bicicletta", "aereo"});
-        transportationWords.put(Language.PORTUGUESE, new String[]{"carro", "ônibus", "trem", "bicicleta", "avião"});
+        transportationWords.put(Language.ENGLISH, new String[]{"CAR", "BUS", "TRAIN", "BIKE", "PLANE"});
+        transportationWords.put(Language.SPANISH, new String[]{"COCHE", "AUTOBUS", "TREN", "BICICLETA", "AVION"});
+        transportationWords.put(Language.FRENCH, new String[]{"VOITURE", "BUS", "TRAIN", "VELO", "AVION"});
+        transportationWords.put(Language.GERMAN, new String[]{"AUTO", "BUS", "ZUG", "FAHRRAD", "FLUGZEUG"});
+        transportationWords.put(Language.ITALIAN, new String[]{"AUTO", "BUS", "TRENO", "BICICLETTA", "AEREO"});
+        transportationWords.put(Language.PORTUGUESE, new String[]{"CARRO", "ÔNIBUS", "TREM", "BICICLETA", "AVIAO"});
         words.put(WordCategory.MODES_OF_TRANSPORTATION, transportationWords);
 
         Map<Language, String[]> celebritiesWords = new HashMap<>();
-        celebritiesWords.put(Language.ENGLISH, new String[]{"Tom Hanks", "Jennifer Aniston", "Leonardo DiCaprio", "Angelina Jolie", "Brad Pitt"});
-        celebritiesWords.put(Language.SPANISH, new String[]{"Penélope Cruz", "Antonio Banderas", "Javier Bardem", "Salma Hayek", "Penélope Cruz"});
-        celebritiesWords.put(Language.FRENCH, new String[]{"Marion Cotillard", "Jean Dujardin", "Audrey Tautou", "Omar Sy", "Brigitte Bardot"});
-        celebritiesWords.put(Language.GERMAN, new String[]{"Diane Kruger", "Daniel Brühl", "Christoph Waltz", "Heidi Klum", "Karl Lagerfeld"});
-        celebritiesWords.put(Language.ITALIAN, new String[]{"Sophia Loren", "Monica Bellucci", "Roberto Benigni", "Gina Lollobrigida", "Marcello Mastroianni"});
-        celebritiesWords.put(Language.PORTUGUESE, new String[]{"Gisele Bündchen", "Rodrigo Santoro", "Fernanda Montenegro", "Wagner Moura", "Lázaro Ramos"});
+        celebritiesWords.put(Language.ENGLISH, new String[]{"TOM HANKS", "JENNIFER ANISTON", "LEONARDO DICAPRIO", "ANGELINA JOLIE", "BRAD PITT"});
+        celebritiesWords.put(Language.SPANISH, new String[]{"PENELOPE CRUZ", "ANTONIO BANDERAS", "JAVIER BARDEM", "SALMA HAYEK", "PENELOPE CRUZ"});
+        celebritiesWords.put(Language.FRENCH, new String[]{"MARION COTILLARD", "JEAN DUJARDIN", "AUDREY TAUTOU", "OMAR SY", "BRIGITTE BARDOT"});
+        celebritiesWords.put(Language.GERMAN, new String[]{"DIANE KRUGER", "DANIEL BRÜHL", "CHRISTOPH WALTZ", "HEIDI KLUM", "KARL LAGERFELD"});
+        celebritiesWords.put(Language.ITALIAN, new String[]{"SOPHIA LOREN", "MONICA BELLUCCI", "ROBERTO BENIGNI", "GINA LOLLOBRIGIDA", "MARCELLO MASTROIANNI"});
+        celebritiesWords.put(Language.PORTUGUESE, new String[]{"GISELE BUNDCHEN", "RODRIGO SANTORO", "FERNANDA MONTENEGRO", "WAGNER MOURA", "LAZARO RAMOS"});
         words.put(WordCategory.CELEBRITIES, celebritiesWords);
 
         Map<Language, String[]> instrumentsWords = new HashMap<>();
-        instrumentsWords.put(Language.ENGLISH, new String[]{"guitar", "piano", "violin", "drums", "trumpet"});
-        instrumentsWords.put(Language.SPANISH, new String[]{"guitarra", "piano", "violín", "batería", "trompeta"});
-        instrumentsWords.put(Language.FRENCH, new String[]{"guitare", "piano", "violon", "batterie", "trompette"});
-        instrumentsWords.put(Language.GERMAN, new String[]{"Gitarre", "Klavier", "Violine", "Schlagzeug", "Trompete"});
-        instrumentsWords.put(Language.ITALIAN, new String[]{"chitarra", "pianoforte", "violino", "batteria", "tromba"});
-        instrumentsWords.put(Language.PORTUGUESE, new String[]{"guitarra", "piano", "violino", "bateria", "trompete"});
+        instrumentsWords.put(Language.ENGLISH, new String[]{"GUITAR", "PIANO", "VIOLIN", "DRUMS", "TRUMPET"});
+        instrumentsWords.put(Language.SPANISH, new String[]{"GUITARRA", "PIANO", "VIOLIN", "BATERIA", "TROMPETA"});
+        instrumentsWords.put(Language.FRENCH, new String[]{"GUITARE", "PIANO", "VIOLON", "BATTERIE", "TROMPETTE"});
+        instrumentsWords.put(Language.GERMAN, new String[]{"GITARRE", "KLAVIER", "VIOLINE", "SCHLAGZEUG", "TROMPETE"});
+        instrumentsWords.put(Language.ITALIAN, new String[]{"CHITARRA", "PIANOFORTE", "VIOLINO", "BATTERIA", "TROMBA"});
+        instrumentsWords.put(Language.PORTUGUESE, new String[]{"GUITARRA", "PIANO", "VIOLINO", "BATERIA", "TROMPETE"});
         words.put(WordCategory.MUSICAL_INSTRUMENTS, instrumentsWords);
-
-
     }
 
     public String getRandomWord() {

@@ -11,10 +11,11 @@ public class Player {
 
     private String name_player1;
     private String name_player2;
-    private int points_player1;
-    private int points_player2;
+    private int attempts_player;
 
     public Player setPlayer(GameMode gameMode) {
+
+        attempts_player = 5;
 
         if (gameMode.getPlayerMode() == PlayerMode.SINGLE_PLAYER) {
             System.out.print("Type your name: ");
@@ -32,6 +33,18 @@ public class Player {
         return this;
     }
 
+    public String getPlayerStats() {
+        String playerStats = "Player name: " + name_player1 + " chances: " + getAttempts_player();
+
+        if (name_player2 != null) {
+            String playerStats2 = "Player two name: " + name_player2 + " chances: " + getAttempts_player();
+
+            return playerStats + "\n" + playerStats2;
+        }
+
+        return playerStats;
+    }
+
     public String getName_player1() {
         return name_player1;
     }
@@ -40,24 +53,13 @@ public class Player {
         return name_player2;
     }
 
-    public int getPoints_player1(WordGenerator wordGenerator) {
-        return points_player1 = wordGenerator.getRandomWord().length();
+    public int getAttempts_player() {
+        return attempts_player;
     }
 
-    public int getPoints_player2(WordGenerator wordGenerator) {
-        return points_player2 = wordGenerator.getRandomWord().length();
-    }
-
-    public void removePointsPlayer1() {
-
-        if (points_player1 >= 1) {
-            points_player1 = points_player1 - 1;
-        }
-    }
-
-    public void removePointsPlayer2() {
-        if (points_player2 >= 1) {
-            points_player2 = points_player2 - 1;
+    public void removeAttemptsPlayer() {
+        if (attempts_player >= 1) {
+            attempts_player = attempts_player - 1;
         }
     }
 }
